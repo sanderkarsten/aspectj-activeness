@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------------------------
+Metrics AspectJ
+https://github.com/astefanutti/metrics-aspectj/issues/8
+"Clarify in README whether this plugin actually works with Spring AOP"
+Asks whether it can be clarified if aspectj and spring can be used in conjunction.
+
+Spring AOP and AspectJ provides Aspect Oriented Programming (AOP) in two very different ways:
+
+AspectJ provides a full-fledged aspect definition and support both Compile Time Weaving (CTW) and Load Time Weaving (LTW) (with a Java agent) and implements AOP with class instrumentation (byte code manipulation),
+Spring AOP does not support the whole AspectJ aspect definition and does not support Compile Time Weaving,
+Spring AOP implements AOP either using (see Spring proxying mechanisms):
+JDK dynamic proxies, which add little runtime overhead, clutter stack traces and can be incompatible with other Spring functionality like Spring JMX (for dynamic MBean export for example),
+Or CGLIB (byte code manipulation), that has to be added as a runtime dependency:
+It dynamically extends classes thus it is incompatible with final classes or methods,
+CGLIB development isn't active, Hibernate has been deprecating it in favor of Javassist (see Deprecated CGLIB support),
+AJDT (AspectJ Development Tools) provides deep integration between AspectJ and the Eclipse platform which is not possible with Spring AOP due to the runtime / dynamic nature of its AOP implementation.
+Further details can be found in Choosing which AOP declaration style to use from the Spring framework documentation. The Spring AOP vs AspectJ question on Stack Overflow provides some insights as well.
+-----------------------------------------------------------------------------------------------
+Other issues ignored since they were opened by a bot

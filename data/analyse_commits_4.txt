@@ -1,0 +1,106 @@
+-----------------------------------------------------------------------------------------------
+Metrics AspectJ Repository
+"Spring AOP vs. AspectJ"
+https://github.com/astefanutti/metrics-aspectj/commit/1e6ed0a8287b658a7e3925f94048232ee34cee09
+
+=> On commit:
+	- Update String AOP vs. AspectJ section
+ 	- Make comparison of AOP vs AspectJ, later project uses AspectJ
+=> on readme:
+	AspectJ provides more functionality for weaving
+-----------------------------------------------------------------------------------------------
+Spring Boot AspectJ Repository
+Add benchmarks:
+https://github.com/dsyer/spring-boot-aspectj/commit/8535d4ad20f19e6eb8492697824e0c5912ca3368
+	"The LTW benchmarks don't mean a lot yet (it's hard to change the
+	number of aspects at runtime with AspectJ). The Spring AOP numbers
+	are startling - the startup time is driven by the number of
+	pointcuts having @aspect expressions (if you remove the @matcher
+	the startup time is the same as with 0 aspects), not particularly
+	by the number of beans."
+
+
+Clarify status of AspectJ and Spring AOP on startup performance:
+https://github.com/dsyer/spring-boot-aspectj/commit/50f9061254e093b5c23273adf4d0117b71ee5186
+
+=> Described performance measures in first commit
+=> On readme:
+	- Integrate aspectJ with Spring, AspectJ used for weaving aspects
+	- AspectJ is faster for weaving but more work to set up
+-----------------------------------------------------------------------------------------------
+Org AspectJ Repository
+Fix 487694: Race condition in annotation unpacking can surface through Spring AOP: --Ignored, nothing mentioned
+https://github.com/eclipse/org.aspectj/commit/a17b28a1a9a0756cfc2181bf2b095650e186425a
+
+Fixes Bug 525293 - Spring AOP could be faster:
+https://github.com/eclipse/org.aspectj/commit/ba551b09e4c873f30c0675193e70e0a0eb62c3ca?branch=ba551b09e4c873f30c0675193e70e0a0eb62c3ca&diff=unified
+Mentions bug that cant be found where Spring AOP could potentially run faster?
+-----------------------------------------------------------------------------------------------
+Automon Repository
+Started work to get standard spring aop to work
+https://github.com/stevensouza/automon/commit/2801f7ade5bba41ab1e2065c21fa9bd0162b58c9
+https://github.com/stevensouza/automon/commit/a1847600c20e42577c49cf8c7f0cc751f96568a4
+playing around with spring aop
+https://github.com/stevensouza/automon/commit/da25ba12b0c79a5868a9b3d857ec55b36a480494
+https://github.com/stevensouza/automon/commit/40516382d9a2527dc32bab1fe2f0129946140fd0
+
+=> Tries out integration to support Spring AOP and AspectJ for tool added to release later
+	v1.0.2: added classes to get Automon to work more cleanly with Spring as well…
+-----------------------------------------------------------------------------------------------
+AspectJ LWT Gradle sample repository
+First working AspectJ using Spring AOP syntax.
+https://github.com/GuyPaddock/aspectj-ltw-gradle-sample/commit/33a1036ef44aeaaa7850653718d3489c31577c03 --Ignored, nothing mentioned
+
+=> Sample project that uses native AspectJ syntax in spring with loadtime weaving (supported by AspectJ)
+-----------------------------------------------------------------------------------------------
+AspectJ Example repository
+update code spring aop
+https://github.com/thinhdd/AspectjExample/commit/83cc3cc5575a1e7e7b2253ae946d1e063168dff8 -- Ignored, nothing mentioned
+https://github.com/thinhdd/AspectjExample/commit/6113dfb1032ddfc68ed1385ed68741dbed33e3d7 -- Ignored, nothing mentioned
+
+=> Whole repository mentions no information
+-----------------------------------------------------------------------------------------------
+Java AspectJ repository
+change to spring aop
+https://github.com/JxSrcInc/java-aspectj/commit/31231d8c82d45283c90a3970b1a8236ba8758a08
+add spring aspectj
+https://github.com/JxSrcInc/java-aspectj/commit/4c2d2809731c9e3833b8e054745f8e64ff34fb17
+add a spring boot aspectj project
+https://github.com/JxSrcInc/java-aspectj/commit/c9efe8246a702cb60859f268c853b8a5becc805f
+
+=> Repo mentions no information in commits, readme or issues, but titles do mention a change to spring AOP later, project now mostly uses Spring AOP together with AspectJ
+-----------------------------------------------------------------------------------------------
+AspectJ Demo repository
+Spring AOP demos added
+https://github.com/fstovarr/aspectj-demo/commit/e0b68ea2c6c4d7f4ee0a67a6ac7c5f1dbe61c4e7 -- Ignored, nothing mentioned
+
+=> Repo mentions no information
+-----------------------------------------------------------------------------------------------
+AspectJ Demo repository 2
+Update SpringAopDemo.java
+https://github.com/sambos/aspectj-demo/commit/af8a4ba7450e898996534bf383ee2fc0373cd3f3
+=> Demo example combining AspectJ and Spring AOP
+-----------------------------------------------------------------------------------------------
+Spring AOP examples
+Initial Commit with Spring AOP & AspectJ AOP examples
+https://github.com/vijaykglg/spring-aop-examples/commit/5605978a25eb6218e708b68c6fdcc3bd21245918
+
+=> Repository is just a demo example
+-----------------------------------------------------------------------------------------------
+Spring AOP AspectJ repository
+Create Spring AOP with Aspectj
+https://github.com/rkritchat/Spring-Aop-AspectJ/commit/992d0254b89063d9901ef11aa5eb431717beb98a
+
+=> No information provided
+-----------------------------------------------------------------------------------------------
+SpringAOP AspectJ repository
+this is a project for spring aop by using aspectj
+ https://github.com/hbzhao/SpringAOP-aspectj/commit/d990e5a361cf04545d1098497bd222d9a4ac054e
+
+=> No information provided
+-----------------------------------------------------------------------------------------------
+Spring AOP repository
+Initial Commit - Spring AOP with AspectJ
+https://github.com/stujfiter/spring-aop/commit/6fede5f0553195e4762059399855e0851e243333
+
+=> No information provided

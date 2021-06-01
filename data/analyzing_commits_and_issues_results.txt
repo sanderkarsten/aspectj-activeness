@@ -1,0 +1,622 @@
+======================= Commit (1) =================================
+Spring AOP vs. AspectJ
+https://github.com/astefanutti/metrics-aspectj
+2013-09-19T23:17:10+02:00
+
+======================= Commit (2) =================================
+Add links for Spring AOP
+https://github.com/astefanutti/metrics-aspectj
+2013-09-24T23:16:14-07:00
+
+======================= Commit (3) =================================
+Add benchmarks
+
+The LTW benchmarks don't mean a lot yet (it's hard to change the
+number of aspects at runtime with AspectJ). The Spring AOP numbers
+are startling - the startup time is driven by the number of
+pointcuts having @aspect expressions (if you remove the @matcher
+the startup time is the same as with 0 aspects), not particularly
+by the number of beans.
+https://github.com/dsyer/spring-boot-aspectj
+2017-08-31T17:29:10+01:00
+
+======================= Commit (4) =================================
+Clarify status of AspectJ and Spring AOP on startup performance
+https://github.com/dsyer/spring-boot-aspectj
+2018-01-03T09:34:35+00:00
+
+======================= Commit (5) =================================
+Fix 487694: Race condition in annotation unpacking can surface through Spring AOP
+https://github.com/eclipse/org.aspectj
+2016-02-11T13:59:51-08:00
+
+======================= Commit (6) =================================
+Fixes Bug 525293 - Spring AOP could be faster
+
+Multiple changes here:
+- annotation unpacking is smarter and if it only needs runtime
+  retention annotations it uses reflection and doesn't unpack the
+  bytes to discover class level retention annotations.
+- Reflection worlds are shared if for the same classloader.
+https://github.com/eclipse/org.aspectj
+2017-09-28T16:03:17-07:00
+
+======================= Commit (7) =================================
+Started work to get standard spring aop to work
+https://github.com/stevensouza/automon
+2016-07-09T11:09:47+02:00
+
+======================= Commit (8) =================================
+playing around with spring aop
+https://github.com/stevensouza/automon
+2016-07-15T21:06:52+02:00
+
+======================= Commit (9) =================================
+Started work to get standard spring aop to work
+https://github.com/stevensouza/automon
+2016-07-22T14:10:29+02:00
+
+======================= Commit (10) =================================
+playing around with spring aop
+https://github.com/stevensouza/automon
+2016-07-22T14:10:30+02:00
+
+======================= Commit (11) =================================
+First working AspectJ using Spring AOP syntax.
+https://github.com/GuyPaddock/aspectj-ltw-gradle-sample
+2017-03-27T14:14:31-04:00
+
+======================= Commit (12) =================================
+update code spring aop
+https://github.com/thinhdd/AspectjExample
+2017-03-02T18:31:30+07:00
+
+======================= Commit (13) =================================
+update code spring aop
+https://github.com/thinhdd/AspectjExample
+2017-03-03T18:34:18+07:00
+
+======================= Commit (14) =================================
+change to spring aop
+https://github.com/JxSrcInc/java-aspectj
+2018-09-05T23:21:41-04:00
+
+======================= Commit (15) =================================
+Spring AOP demos added
+https://github.com/fstovarr/aspectj-demo
+2019-07-10T09:31:38-05:00
+
+======================= Commit (16) =================================
+Update SpringAopDemo.java
+https://github.com/sambos/aspectj-demo
+2017-10-26T23:31:04-05:00
+
+======================= Commit (17) =================================
+Initial Commit with Spring AOP & AspectJ AOP examples
+https://github.com/vijaykglg/spring-aop-examples
+2020-05-11T18:07:08+05:18
+
+======================= Commit (18) =================================
+Create Spring AOP with Aspectj
+https://github.com/rkritchat/Spring-Aop-AspectJ
+2018-03-16T10:32:45+07:00
+
+======================= Commit (19) =================================
+this is a project for spring aop by using aspectj
+https://github.com/hbzhao/SpringAOP-aspectj
+2018-06-25T17:11:37+08:00
+
+======================= Commit (20) =================================
+this is a project for spring aop by using aspectj
+https://github.com/hbzhao/SpringAOP-aspectj
+2018-06-25T17:11:37+08:00
+
+======================= Commit (21) =================================
+Initial Commit - Spring AOP with AspectJ
+https://github.com/stujfiter/spring-aop
+2016-12-20T10:39:18-06:00
+
+======================= Issue (1) =================================
+There is a section in the README comparing Spring AOP vs AspectJ, but it doesn't indicate whether it's possible to use this plugin in conjunction with Spring AOP. Can the README be updated to state clearly whether this works with Spring AOP?
+
+https://github.com/astefanutti/metrics-aspectj/issues/8
+
+======================= Issue (2) =================================
+Bumps [junit](https://github.com/junit-team/junit4) from 4.11 to 4.13.1.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/junit-team/junit4/releases">junit's releases</a>.</em></p>
+<blockquote>
+<h2>JUnit 4.13.1</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.13.1.md">release notes</a> for details.</p>
+<h2>JUnit 4.13</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.13.md">release notes</a> for details.</p>
+<h2>JUnit 4.13 RC 2</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 RC 1</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 Beta 3</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 Beta 2</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 Beta 1</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.12</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.12.md">release notes</a> for details.</p>
+<h2>JUnit 4.12 Beta 3</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.12.md">release notes</a> for details.</p>
+<h2>JUnit 4.12 Beta 2</h2>
+<p>No release notes provided.</p>
+<h2>JUnit 4.12 Beta 1</h2>
+<p>No release notes provided.</p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/junit-team/junit4/commit/1b683f4ec07bcfa40149f086d32240f805487e66"><code>1b683f4</code></a> [maven-release-plugin] prepare release r4.13.1</li>
+<li><a href="https://github.com/junit-team/junit4/commit/ce6ce3aadc070db2902698fe0d3dc6729cd631f2"><code>ce6ce3a</code></a> Draft 4.13.1 release notes</li>
+<li><a href="https://github.com/junit-team/junit4/commit/c29dd8239d6b353e699397eb090a1fd27411fa24"><code>c29dd82</code></a> Change version to 4.13.1-SNAPSHOT</li>
+<li><a href="https://github.com/junit-team/junit4/commit/1d174861f0b64f97ab0722bb324a760bfb02f567"><code>1d17486</code></a> Add a link to assertThrows in exception testing</li>
+<li><a href="https://github.com/junit-team/junit4/commit/543905df72ff10364b94dda27552efebf3dd04e9"><code>543905d</code></a> Use separate line for annotation in Javadoc</li>
+<li><a href="https://github.com/junit-team/junit4/commit/510e906b391e7e46a346e1c852416dc7be934944"><code>510e906</code></a> Add sub headlines to class Javadoc</li>
+<li><a href="https://github.com/junit-team/junit4/commit/610155b8c22138329f0723eec22521627dbc52ae"><code>610155b</code></a> Merge pull request from GHSA-269g-pwp5-87pp</li>
+<li><a href="https://github.com/junit-team/junit4/commit/b6cfd1e3d736cc2106242a8be799615b472c7fec"><code>b6cfd1e</code></a> Explicitly wrap float parameter for consistency (<a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1671">#1671</a>)</li>
+<li><a href="https://github.com/junit-team/junit4/commit/a5d205c7956dbed302b3bb5ecde5ba4299f0b646"><code>a5d205c</code></a> Fix GitHub link in FAQ (<a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1672">#1672</a>)</li>
+<li><a href="https://github.com/junit-team/junit4/commit/3a5c6b4d08f408c8ca6a8e0bae71a9bc5a8f97e8"><code>3a5c6b4</code></a> Deprecated since jdk9 replacing constructor instance of Double and Float (<a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1660">#1660</a>)</li>
+<li>Additional commits viewable in <a href="https://github.com/junit-team/junit4/compare/r4.11...r4.13.1">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=junit:junit&package-manager=maven&previous-version=4.11&new-version=4.13.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/hzebin/SpringAOP_AspectJ/network/alerts).
+
+</details>
+https://github.com/hzebin/SpringAOP_AspectJ/pull/2
+
+======================= Issue (3) =================================
+Bumps [spring-core](https://github.com/spring-projects/spring-framework) from 4.2.4.RELEASE to 4.3.19.RELEASE.
+<details>
+<summary>Commits</summary>
+
+- [`f428cbb`](https://github.com/spring-projects/spring-framework/commit/f428cbb72f7e2b68e5961b90409be7928e24db13) Release version 4.3.19.RELEASE
+- [`6a5d986`](https://github.com/spring-projects/spring-framework/commit/6a5d986b339ee6a46ad439a9402e206f8d463246) Fix SpEL compilation for non trivial elvis operand
+- [`8ce9236`](https://github.com/spring-projects/spring-framework/commit/8ce9236b0f446fe0a2c78313b6bee68540473111) Polishing
+- [`1a626ab`](https://github.com/spring-projects/spring-framework/commit/1a626ab948d7a5d12d024fa7a483ee450111f60a) SpelExpression consistently exposes EvaluationContext to compiled AST
+- [`56194a1`](https://github.com/spring-projects/spring-framework/commit/56194a10513e5272909e69c3afb56013e4a720bb) Transactional timeout documented as seconds in annotation javadoc
+- [`a496836`](https://github.com/spring-projects/spring-framework/commit/a496836e46721de8696ac99f17a21d995c18e568) Upgrade to Tomcat 8.5.33 and Netty 4.1.29
+- [`974e7b8`](https://github.com/spring-projects/spring-framework/commit/974e7b88ee1d13f88bb4a3ed6bc279000a72c08d) Polishing
+- [`069704f`](https://github.com/spring-projects/spring-framework/commit/069704f4a03f8b142d68695d0d1292096d069d6a) Support Jackson filters in combination with serialization view
+- [`d38eb9d`](https://github.com/spring-projects/spring-framework/commit/d38eb9d6a0c952cd38861d56c86d8a5eac821dfc) SimpleAliasRegistry.hasAlias properly resolves multiple chained aliases
+- [`5bd4f88`](https://github.com/spring-projects/spring-framework/commit/5bd4f88af1bce41d1417ac5aecb5894a2d30391e) Polishing
+- Additional commits viewable in [compare view](https://github.com/spring-projects/spring-framework/compare/v4.2.4.RELEASE...v4.3.19.RELEASE)
+</details>
+<br />
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=org.springframework:spring-core&package-manager=maven&previous-version=4.2.4.RELEASE&new-version=4.3.19.RELEASE)](https://help.github.com/articles/configuring-automated-security-fixes)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot ignore this [patch|minor|major] version` will close this PR and stop Dependabot creating any more for this minor/major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/hzebin/SpringAOP_AspectJ/network/alerts).
+
+</details>
+https://github.com/hzebin/SpringAOP_AspectJ/pull/1
+
+======================= Issue (4) =================================
+Bumps [junit](https://github.com/junit-team/junit4) from 4.8.2 to 4.13.1.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/junit-team/junit4/releases">junit's releases</a>.</em></p>
+<blockquote>
+<h2>JUnit 4.13.1</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.13.1.md">release notes</a> for details.</p>
+<h2>JUnit 4.13</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.13.md">release notes</a> for details.</p>
+<h2>JUnit 4.13 RC 2</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 RC 1</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 Beta 3</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 Beta 2</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.13 Beta 1</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit4/wiki/4.13-Release-Notes">release notes</a> for details.</p>
+<h2>JUnit 4.12</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.12.md">release notes</a> for details.</p>
+<h2>JUnit 4.12 Beta 3</h2>
+<p>Please refer to the <a href="https://github.com/junit-team/junit/blob/HEAD/doc/ReleaseNotes4.12.md">release notes</a> for details.</p>
+<h2>JUnit 4.12 Beta 2</h2>
+<p>No release notes provided.</p>
+<h2>JUnit 4.12 Beta 1</h2>
+<p>No release notes provided.</p>
+<h2>JUnit 4.11</h2>
+<p>No release notes provided.</p>
+</blockquote>
+</details>
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/junit-team/junit4/blob/main/doc/ReleaseNotes4.13.1.md">junit's changelog</a>.</em></p>
+<blockquote>
+<h2>Summary of changes in version 4.13.1</h2>
+<h1>Rules</h1>
+<h3>Security fix: <code>TemporaryFolder</code> now limits access to temporary folders on Java 1.7 or later</h3>
+<p>A local information disclosure vulnerability in <code>TemporaryFolder</code> has been fixed. See the published <a href="https://github.com/junit-team/junit4/security/advisories/GHSA-269g-pwp5-87pp">security advisory</a> for details.</p>
+<h1>Test Runners</h1>
+<h3>[Pull request <a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1669">#1669</a>:](<a href="https://github-redirect.dependabot.com/junit-team/junit/pull/1669">junit-team/junit#1669</a>) Make <code>FrameworkField</code> constructor public</h3>
+<p>Prior to this change, custom runners could make <code>FrameworkMethod</code> instances, but not <code>FrameworkField</code> instances. This small change allows for both now, because <code>FrameworkField</code>'s constructor has been promoted from package-private to public.</p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/junit-team/junit4/commit/1b683f4ec07bcfa40149f086d32240f805487e66"><code>1b683f4</code></a> [maven-release-plugin] prepare release r4.13.1</li>
+<li><a href="https://github.com/junit-team/junit4/commit/ce6ce3aadc070db2902698fe0d3dc6729cd631f2"><code>ce6ce3a</code></a> Draft 4.13.1 release notes</li>
+<li><a href="https://github.com/junit-team/junit4/commit/c29dd8239d6b353e699397eb090a1fd27411fa24"><code>c29dd82</code></a> Change version to 4.13.1-SNAPSHOT</li>
+<li><a href="https://github.com/junit-team/junit4/commit/1d174861f0b64f97ab0722bb324a760bfb02f567"><code>1d17486</code></a> Add a link to assertThrows in exception testing</li>
+<li><a href="https://github.com/junit-team/junit4/commit/543905df72ff10364b94dda27552efebf3dd04e9"><code>543905d</code></a> Use separate line for annotation in Javadoc</li>
+<li><a href="https://github.com/junit-team/junit4/commit/510e906b391e7e46a346e1c852416dc7be934944"><code>510e906</code></a> Add sub headlines to class Javadoc</li>
+<li><a href="https://github.com/junit-team/junit4/commit/610155b8c22138329f0723eec22521627dbc52ae"><code>610155b</code></a> Merge pull request from GHSA-269g-pwp5-87pp</li>
+<li><a href="https://github.com/junit-team/junit4/commit/b6cfd1e3d736cc2106242a8be799615b472c7fec"><code>b6cfd1e</code></a> Explicitly wrap float parameter for consistency (<a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1671">#1671</a>)</li>
+<li><a href="https://github.com/junit-team/junit4/commit/a5d205c7956dbed302b3bb5ecde5ba4299f0b646"><code>a5d205c</code></a> Fix GitHub link in FAQ (<a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1672">#1672</a>)</li>
+<li><a href="https://github.com/junit-team/junit4/commit/3a5c6b4d08f408c8ca6a8e0bae71a9bc5a8f97e8"><code>3a5c6b4</code></a> Deprecated since jdk9 replacing constructor instance of Double and Float (<a href="https://github-redirect.dependabot.com/junit-team/junit4/issues/1660">#1660</a>)</li>
+<li>Additional commits viewable in <a href="https://github.com/junit-team/junit4/compare/r4.8.2...r4.13.1">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=junit:junit&package-manager=maven&previous-version=4.8.2&new-version=4.13.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/felleuch/Formation-SpringAOP-AspectJ/network/alerts).
+
+</details>
+https://github.com/felleuch/Formation-SpringAOP-AspectJ/pull/2
+
+======================= Issue (5) =================================
+Bumps `spring.version` from 3.0.5.RELEASE to 5.2.5.RELEASE.
+Updates `spring-core` from 3.0.5.RELEASE to 5.2.5.RELEASE
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/spring-projects/spring-framework/releases">spring-core's releases</a>.</em></p>
+<blockquote>
+<h2>v5.2.5.RELEASE</h2>
+<h2>:star: New Features</h2>
+<ul>
+<li>Do not cache multipart mime types in MimeTypeUtils LRU cache <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24767">#24767</a></li>
+<li>Declare proxyBeanMethods=false in JmsBootstrapConfiguration <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24752">#24752</a></li>
+<li>Usage of java 14 record throws java.lang.UnsupportedOperationException: This feature requires ASM8_EXPERIMENTAL <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24722">#24722</a></li>
+<li>Non-public Kotlin beans can't be instantiated <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24712">#24712</a></li>
+<li>Avoid ClassCastException for CoyoteInputStream in TomcatHttpHandlerAdapter <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24707">#24707</a></li>
+<li>Avoid unnecessary sorting in AbstractHandlerMethodMapping <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24704">#24704</a></li>
+<li>Improve performance of StringUtils#cleanPath <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24674">#24674</a></li>
+<li>Optimize global advisor registration in ProxyFactoryBean <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24669">#24669</a></li>
+<li>Short circuit check in SynthesizedMergedAnnotationInvocationHandler.isVisible() <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24664">#24664</a></li>
+<li>Ignore empty domain string in ResponseCookie <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24663">#24663</a></li>
+<li>Remove UTF-8 charset parameter from Content-Type in SseEmitter <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24632">#24632</a></li>
+<li>Jaxb2XmlDecoder Does Not Throw Codec Exception For Invalid XML <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24622">#24622</a></li>
+<li>TransactionInterceptor constructors should accept a generic TransactionManager <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24612">#24612</a></li>
+<li>Relax GraalVM checks in DefaultParameterNameDiscoverer <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24600">#24600</a></li>
+<li>Multipart/related support in Spring Webclient <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24582">#24582</a></li>
+<li>Consider supporting PreFlight requests and CORS in Servlet Functional Endpoints <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24564">#24564</a></li>
+<li>Support for byte-range requests in Servlet Functional endpoints <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24562">#24562</a></li>
+<li>Provide a mechanism to configure integration tests with a dynamic property source <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24540">#24540</a></li>
+<li>Improve ConcurrentLruCache performance <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24469">#24469</a></li>
+<li>Reduce Class[] garbage when creating proxies <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24221">#24221</a></li>
+<li>implements <code>checkNotModified</code> for <code>ServerRequest</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24173">#24173</a></li>
+<li>AbstractSockJsSession exception when handling message with closed session <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/23828">#23828</a></li>
+</ul>
+<h2>:beetle: Bug Fixes</h2>
+<ul>
+<li>Missing nullability declarations for package web.socket.server.jetty <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24745">#24745</a></li>
+<li>MediaTypeNotSupportedStatusException seems unused <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24743">#24743</a></li>
+<li>MessagingRSocket incorrectly tries to release entire input stream on channel interaction  <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24741">#24741</a></li>
+<li>MimeTypeUtils performance degradation <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24671">#24671</a></li>
+<li>RSocket MetadataEncoder expands the routes incorrect <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24656">#24656</a></li>
+<li>Spring generates huge callstack for async requests <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24652">#24652</a></li>
+<li>CodecException (from JSON conversion) in RestController is not mapped to 400 but 500 (SB 2.2.5 &amp; Kotlin) <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24646">#24646</a></li>
+<li>addCandidateComponentsFromIndex should create ScannedGenericBeanDefinitions <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24638">#24638</a></li>
+<li>ShallowETagHeaderFilter (still) overwrites ETag and Content-Length <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24635">#24635</a></li>
+<li>Invalid JSON in requests now causes 500 instead of 400 <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24630">#24630</a></li>
+<li>Invalid request results in 500 INTERNAL ERROR instead of 400 BAD REQUEST (with Lombok and Kotlin) <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24610">#24610</a></li>
+<li>Distributions no longer deployed <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24605">#24605</a></li>
+<li>UnknownHttpStatusCodeException is missing the response body  <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24595">#24595</a></li>
+<li>Implementing interface in abstract class does not expose parameter annotations <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24127">#24127</a></li>
+</ul>
+<h2>:notebook_with_decorative_cover: Documentation</h2>
+<ul>
+<li>Clarify name generation responsibility for PropertySourceFactory implementations <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24757">#24757</a></li>
+<li>Improve Javadoc in <code>@Configuration</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24753">#24753</a></li>
+<li>Improve Javadoc in AnnotatedElementUtils <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24740">#24740</a></li>
+<li>Clarify behavior for WebClient statusHandlers <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24736">#24736</a></li>
+<li>Enhance Spring Core documentation, section 1.9.2. Using <code>@Autowired</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24711">#24711</a></li>
+</ul>
+</tr></table> ... (truncated)
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/c08e31b7d613bf91cbe2beac2dad66714403faee"><code>c08e31b</code></a> Release version 5.2.5.RELEASE</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/d97eabba2fcb4c69d25befdcd4869ac87ebf9167"><code>d97eabb</code></a> Do not cache multipart MIME types in cache</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/1cd0e720f769e3527c700de58424156dce69eb2b"><code>1cd0e72</code></a> Specify that Kotlin code samples leverage kotlin-allopen</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/60dca027e73d38f1b4c647076ff16d8a75d9ce67"><code>60dca02</code></a> Add Kotlin documentation and tests for <a href="https://github.com/DynamicPropertySource">@DynamicPropertySource</a></li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/2209e7cb9201d2fa3fe265d98b4dd5dd2db462fc"><code>2209e7c</code></a> Reuse empty class array constant in ClassUtils</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/fdc60311ed7a364e07018fd61893883f837ca4d8"><code>fdc6031</code></a> Avoid unnecessary trace logging in ProxyFactoryBean</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/1c6dda3ca4dc28beee98a4337985f9e4a12a8157"><code>1c6dda3</code></a> Improve performance of StringUtils#cleanPath</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/ac0363c94e09edfa01a617f6629ce8be263ee0ef"><code>ac0363c</code></a> Document <a href="https://github.com/DynamicPropertySource">@DynamicPropertySource</a> support in the reference manual</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/a90716522ca88bdc94dd86524039f1a54ff167fe"><code>a907165</code></a> Include Testcontainers in Further Resources section</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/b2fa574879ae0be736cf348bb5c638274c960eb2"><code>b2fa574</code></a> Upgrade to Reactor Dysprosium-SR6</li>
+<li>Additional commits viewable in <a href="https://github.com/spring-projects/spring-framework/compare/v3.0.5.RELEASE...v5.2.5.RELEASE">compare view</a></li>
+</ul>
+</details>
+<br />
+
+Updates `spring-context` from 3.0.5.RELEASE to 5.2.5.RELEASE
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/spring-projects/spring-framework/releases">spring-context's releases</a>.</em></p>
+<blockquote>
+<h2>v5.2.5.RELEASE</h2>
+<h2>:star: New Features</h2>
+<ul>
+<li>Do not cache multipart mime types in MimeTypeUtils LRU cache <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24767">#24767</a></li>
+<li>Declare proxyBeanMethods=false in JmsBootstrapConfiguration <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24752">#24752</a></li>
+<li>Usage of java 14 record throws java.lang.UnsupportedOperationException: This feature requires ASM8_EXPERIMENTAL <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24722">#24722</a></li>
+<li>Non-public Kotlin beans can't be instantiated <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24712">#24712</a></li>
+<li>Avoid ClassCastException for CoyoteInputStream in TomcatHttpHandlerAdapter <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24707">#24707</a></li>
+<li>Avoid unnecessary sorting in AbstractHandlerMethodMapping <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24704">#24704</a></li>
+<li>Improve performance of StringUtils#cleanPath <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24674">#24674</a></li>
+<li>Optimize global advisor registration in ProxyFactoryBean <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24669">#24669</a></li>
+<li>Short circuit check in SynthesizedMergedAnnotationInvocationHandler.isVisible() <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24664">#24664</a></li>
+<li>Ignore empty domain string in ResponseCookie <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24663">#24663</a></li>
+<li>Remove UTF-8 charset parameter from Content-Type in SseEmitter <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24632">#24632</a></li>
+<li>Jaxb2XmlDecoder Does Not Throw Codec Exception For Invalid XML <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24622">#24622</a></li>
+<li>TransactionInterceptor constructors should accept a generic TransactionManager <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24612">#24612</a></li>
+<li>Relax GraalVM checks in DefaultParameterNameDiscoverer <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24600">#24600</a></li>
+<li>Multipart/related support in Spring Webclient <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24582">#24582</a></li>
+<li>Consider supporting PreFlight requests and CORS in Servlet Functional Endpoints <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24564">#24564</a></li>
+<li>Support for byte-range requests in Servlet Functional endpoints <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24562">#24562</a></li>
+<li>Provide a mechanism to configure integration tests with a dynamic property source <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24540">#24540</a></li>
+<li>Improve ConcurrentLruCache performance <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24469">#24469</a></li>
+<li>Reduce Class[] garbage when creating proxies <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24221">#24221</a></li>
+<li>implements <code>checkNotModified</code> for <code>ServerRequest</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24173">#24173</a></li>
+<li>AbstractSockJsSession exception when handling message with closed session <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/23828">#23828</a></li>
+</ul>
+<h2>:beetle: Bug Fixes</h2>
+<ul>
+<li>Missing nullability declarations for package web.socket.server.jetty <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24745">#24745</a></li>
+<li>MediaTypeNotSupportedStatusException seems unused <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24743">#24743</a></li>
+<li>MessagingRSocket incorrectly tries to release entire input stream on channel interaction  <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24741">#24741</a></li>
+<li>MimeTypeUtils performance degradation <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24671">#24671</a></li>
+<li>RSocket MetadataEncoder expands the routes incorrect <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24656">#24656</a></li>
+<li>Spring generates huge callstack for async requests <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24652">#24652</a></li>
+<li>CodecException (from JSON conversion) in RestController is not mapped to 400 but 500 (SB 2.2.5 &amp; Kotlin) <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24646">#24646</a></li>
+<li>addCandidateComponentsFromIndex should create ScannedGenericBeanDefinitions <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24638">#24638</a></li>
+<li>ShallowETagHeaderFilter (still) overwrites ETag and Content-Length <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24635">#24635</a></li>
+<li>Invalid JSON in requests now causes 500 instead of 400 <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24630">#24630</a></li>
+<li>Invalid request results in 500 INTERNAL ERROR instead of 400 BAD REQUEST (with Lombok and Kotlin) <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24610">#24610</a></li>
+<li>Distributions no longer deployed <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24605">#24605</a></li>
+<li>UnknownHttpStatusCodeException is missing the response body  <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24595">#24595</a></li>
+<li>Implementing interface in abstract class does not expose parameter annotations <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24127">#24127</a></li>
+</ul>
+<h2>:notebook_with_decorative_cover: Documentation</h2>
+<ul>
+<li>Clarify name generation responsibility for PropertySourceFactory implementations <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24757">#24757</a></li>
+<li>Improve Javadoc in <code>@Configuration</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24753">#24753</a></li>
+<li>Improve Javadoc in AnnotatedElementUtils <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24740">#24740</a></li>
+<li>Clarify behavior for WebClient statusHandlers <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24736">#24736</a></li>
+<li>Enhance Spring Core documentation, section 1.9.2. Using <code>@Autowired</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24711">#24711</a></li>
+</ul>
+</tr></table> ... (truncated)
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/c08e31b7d613bf91cbe2beac2dad66714403faee"><code>c08e31b</code></a> Release version 5.2.5.RELEASE</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/d97eabba2fcb4c69d25befdcd4869ac87ebf9167"><code>d97eabb</code></a> Do not cache multipart MIME types in cache</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/1cd0e720f769e3527c700de58424156dce69eb2b"><code>1cd0e72</code></a> Specify that Kotlin code samples leverage kotlin-allopen</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/60dca027e73d38f1b4c647076ff16d8a75d9ce67"><code>60dca02</code></a> Add Kotlin documentation and tests for <a href="https://github.com/DynamicPropertySource">@DynamicPropertySource</a></li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/2209e7cb9201d2fa3fe265d98b4dd5dd2db462fc"><code>2209e7c</code></a> Reuse empty class array constant in ClassUtils</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/fdc60311ed7a364e07018fd61893883f837ca4d8"><code>fdc6031</code></a> Avoid unnecessary trace logging in ProxyFactoryBean</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/1c6dda3ca4dc28beee98a4337985f9e4a12a8157"><code>1c6dda3</code></a> Improve performance of StringUtils#cleanPath</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/ac0363c94e09edfa01a617f6629ce8be263ee0ef"><code>ac0363c</code></a> Document <a href="https://github.com/DynamicPropertySource">@DynamicPropertySource</a> support in the reference manual</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/a90716522ca88bdc94dd86524039f1a54ff167fe"><code>a907165</code></a> Include Testcontainers in Further Resources section</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/b2fa574879ae0be736cf348bb5c638274c960eb2"><code>b2fa574</code></a> Upgrade to Reactor Dysprosium-SR6</li>
+<li>Additional commits viewable in <a href="https://github.com/spring-projects/spring-framework/compare/v3.0.5.RELEASE...v5.2.5.RELEASE">compare view</a></li>
+</ul>
+</details>
+<br />
+
+Updates `spring-aop` from 3.0.5.RELEASE to 5.2.5.RELEASE
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/spring-projects/spring-framework/releases">spring-aop's releases</a>.</em></p>
+<blockquote>
+<h2>v5.2.5.RELEASE</h2>
+<h2>:star: New Features</h2>
+<ul>
+<li>Do not cache multipart mime types in MimeTypeUtils LRU cache <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24767">#24767</a></li>
+<li>Declare proxyBeanMethods=false in JmsBootstrapConfiguration <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24752">#24752</a></li>
+<li>Usage of java 14 record throws java.lang.UnsupportedOperationException: This feature requires ASM8_EXPERIMENTAL <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24722">#24722</a></li>
+<li>Non-public Kotlin beans can't be instantiated <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24712">#24712</a></li>
+<li>Avoid ClassCastException for CoyoteInputStream in TomcatHttpHandlerAdapter <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24707">#24707</a></li>
+<li>Avoid unnecessary sorting in AbstractHandlerMethodMapping <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24704">#24704</a></li>
+<li>Improve performance of StringUtils#cleanPath <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24674">#24674</a></li>
+<li>Optimize global advisor registration in ProxyFactoryBean <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24669">#24669</a></li>
+<li>Short circuit check in SynthesizedMergedAnnotationInvocationHandler.isVisible() <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24664">#24664</a></li>
+<li>Ignore empty domain string in ResponseCookie <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24663">#24663</a></li>
+<li>Remove UTF-8 charset parameter from Content-Type in SseEmitter <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24632">#24632</a></li>
+<li>Jaxb2XmlDecoder Does Not Throw Codec Exception For Invalid XML <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24622">#24622</a></li>
+<li>TransactionInterceptor constructors should accept a generic TransactionManager <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24612">#24612</a></li>
+<li>Relax GraalVM checks in DefaultParameterNameDiscoverer <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24600">#24600</a></li>
+<li>Multipart/related support in Spring Webclient <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24582">#24582</a></li>
+<li>Consider supporting PreFlight requests and CORS in Servlet Functional Endpoints <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24564">#24564</a></li>
+<li>Support for byte-range requests in Servlet Functional endpoints <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24562">#24562</a></li>
+<li>Provide a mechanism to configure integration tests with a dynamic property source <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24540">#24540</a></li>
+<li>Improve ConcurrentLruCache performance <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24469">#24469</a></li>
+<li>Reduce Class[] garbage when creating proxies <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24221">#24221</a></li>
+<li>implements <code>checkNotModified</code> for <code>ServerRequest</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24173">#24173</a></li>
+<li>AbstractSockJsSession exception when handling message with closed session <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/23828">#23828</a></li>
+</ul>
+<h2>:beetle: Bug Fixes</h2>
+<ul>
+<li>Missing nullability declarations for package web.socket.server.jetty <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24745">#24745</a></li>
+<li>MediaTypeNotSupportedStatusException seems unused <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24743">#24743</a></li>
+<li>MessagingRSocket incorrectly tries to release entire input stream on channel interaction  <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24741">#24741</a></li>
+<li>MimeTypeUtils performance degradation <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24671">#24671</a></li>
+<li>RSocket MetadataEncoder expands the routes incorrect <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24656">#24656</a></li>
+<li>Spring generates huge callstack for async requests <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24652">#24652</a></li>
+<li>CodecException (from JSON conversion) in RestController is not mapped to 400 but 500 (SB 2.2.5 &amp; Kotlin) <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24646">#24646</a></li>
+<li>addCandidateComponentsFromIndex should create ScannedGenericBeanDefinitions <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24638">#24638</a></li>
+<li>ShallowETagHeaderFilter (still) overwrites ETag and Content-Length <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24635">#24635</a></li>
+<li>Invalid JSON in requests now causes 500 instead of 400 <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24630">#24630</a></li>
+<li>Invalid request results in 500 INTERNAL ERROR instead of 400 BAD REQUEST (with Lombok and Kotlin) <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24610">#24610</a></li>
+<li>Distributions no longer deployed <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24605">#24605</a></li>
+<li>UnknownHttpStatusCodeException is missing the response body  <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24595">#24595</a></li>
+<li>Implementing interface in abstract class does not expose parameter annotations <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24127">#24127</a></li>
+</ul>
+<h2>:notebook_with_decorative_cover: Documentation</h2>
+<ul>
+<li>Clarify name generation responsibility for PropertySourceFactory implementations <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24757">#24757</a></li>
+<li>Improve Javadoc in <code>@Configuration</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24753">#24753</a></li>
+<li>Improve Javadoc in AnnotatedElementUtils <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/pull/24740">#24740</a></li>
+<li>Clarify behavior for WebClient statusHandlers <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24736">#24736</a></li>
+<li>Enhance Spring Core documentation, section 1.9.2. Using <code>@Autowired</code> <a href="https://github-redirect.dependabot.com/spring-projects/spring-framework/issues/24711">#24711</a></li>
+</ul>
+</tr></table> ... (truncated)
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/c08e31b7d613bf91cbe2beac2dad66714403faee"><code>c08e31b</code></a> Release version 5.2.5.RELEASE</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/d97eabba2fcb4c69d25befdcd4869ac87ebf9167"><code>d97eabb</code></a> Do not cache multipart MIME types in cache</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/1cd0e720f769e3527c700de58424156dce69eb2b"><code>1cd0e72</code></a> Specify that Kotlin code samples leverage kotlin-allopen</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/60dca027e73d38f1b4c647076ff16d8a75d9ce67"><code>60dca02</code></a> Add Kotlin documentation and tests for <a href="https://github.com/DynamicPropertySource">@DynamicPropertySource</a></li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/2209e7cb9201d2fa3fe265d98b4dd5dd2db462fc"><code>2209e7c</code></a> Reuse empty class array constant in ClassUtils</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/fdc60311ed7a364e07018fd61893883f837ca4d8"><code>fdc6031</code></a> Avoid unnecessary trace logging in ProxyFactoryBean</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/1c6dda3ca4dc28beee98a4337985f9e4a12a8157"><code>1c6dda3</code></a> Improve performance of StringUtils#cleanPath</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/ac0363c94e09edfa01a617f6629ce8be263ee0ef"><code>ac0363c</code></a> Document <a href="https://github.com/DynamicPropertySource">@DynamicPropertySource</a> support in the reference manual</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/a90716522ca88bdc94dd86524039f1a54ff167fe"><code>a907165</code></a> Include Testcontainers in Further Resources section</li>
+<li><a href="https://github.com/spring-projects/spring-framework/commit/b2fa574879ae0be736cf348bb5c638274c960eb2"><code>b2fa574</code></a> Upgrade to Reactor Dysprosium-SR6</li>
+<li>Additional commits viewable in <a href="https://github.com/spring-projects/spring-framework/compare/v3.0.5.RELEASE...v5.2.5.RELEASE">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/felleuch/Formation-SpringAOP-AspectJ/network/alerts).
+
+</details>
+https://github.com/felleuch/Formation-SpringAOP-AspectJ/pull/1
+
+Process finished with exit code 0
