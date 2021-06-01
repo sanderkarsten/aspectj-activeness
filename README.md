@@ -8,7 +8,7 @@ The activeness is based on 4 measurements:
 - **Number of changes:**  combines the total amount of changes for every month between January 2016 and April 2021. In this case a change is either a line deletion or an insertion in a commit. This can give an insight in how much code there is created for the AspectJ repositories.
 - **Number of files:**  combines the total amount of files changed for every month between January 2016 and April 2021. For every commit the amount of files changed is counted, this can be used to indicate how much the files are updated.
 - **Number of issues:**  combine the total amount of issues based on the creation date for every month between January 2016 and April 2021. This gives in insight in how active the issues of a repository are.
-- 
+
 ## Code
 The code can be found in the code folder, for this to be able to be run a config.ini file must be created providing your GitHub search API key.
 ```
